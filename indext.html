@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>Form Html5</title>
+</head>
+<body>
+    <!-- Div principal -->
+    <form action="">
+    <!-- Título-->
+        <div class="card-header">
+            <h2>Payment form example</h2>
+        </div>
+    <!-- Nº de tarjeta -->
+            <div class="col- col-sm- col-md d-flex justify-content-around">
+                <div class="creditCard">Card#
+                    <input class="form-control" type="number" placeholder="XXXXXXXXXXXXXXXXXX" aria-label="default input example">
+                </div>
+                <div class="cvc">CVC#
+                    <input class="form-control" type="number" placeholder="000" aria-label="default input example">
+                </div>
+                <div class="amount">Amount
+                    <input class="form-control" type="number" placeholder="" aria-label="default input example" >
+                </div>
+            </div>    
+<!-- FirstName, city we accept -->
+                <div class="d-flex flex-column bd-highlight mb-3 col- col-sm- col-md d-flex justify-content-around">
+                    <div class="p-2 bd-highlight">First Name
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example" >
+                    </div>
+                    <div class="p-2 bd-highlight">City
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example" >
+                    </div>
+                    <div class="p-2 bd-highlight">We Accept:
+                        <div class="form-check form-check-block">
+                            <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label  fa-brands fa-cc-mastercard" for="inlineRadio1"></label>
+                        </div>
+                        <div class="form-check form-check-block">
+                            <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label fa-brands fa-cc-visa" for="inlineRadio2"></label>
+                        </div>
+                        <div class="form-check form-check-block">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label fa-brands fa-cc-amazon-pay" for="inlineRadio3"></label>
+                        </div>   
+
+                        <!-- <label><input class="fa-brands fa-cc-visa" type="radio"></label>
+                        <label><input class="fa-brands fa-cc-mastercard" type="radio"></label>
+                        <label><input class="fa-brands fa-cc-diners-club" type="radio"></label>
+                        <label><input class="fa-brands fa-cc-amazon-pay" type="radio"></label> -->
+                    </div>
+                </div>
+<!-- LastName,State,Code,message -->
+<div class="d-flex flex-column bd-highlight mb-3 col- col-sm- col-md d-flex justify-content-around">
+    <div class="p-2 bd-highlight">Last Name
+        <input class="form-control" type="text" placeholder="" aria-label="default input example" >
+    </div>
+    <div class="p-2 bd-highlight">State
+        <input class="form-control" type="text" placeholder="" aria-label="default input example" >
+    </div>
+    <div class="p-2 bd-highlight">Postal Code
+        <input class="form-control" type="text" placeholder="" aria-label="default input example" >
+    </div>
+    <div class="p-2 bd-highlight">Message
+        <input class="form-control" type="text" placeholder="" aria-label="default input example" >
+    </div>
+</div>
+ <!-- end -->
+        <div class="card-footer">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-second me-md-2" type="button">Cancel</button>
+                <button class="btn btn-primary" type="button">Send</button>
+              </div>
+        </div>
+    </form>
+</body>
+</html>
